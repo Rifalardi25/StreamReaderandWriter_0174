@@ -31,4 +31,6 @@ int main()
     ifstream infile;
     // Membuka file yang dituliskan
     infile.open("contohfile.txt");
+
+    cout << endl << ">= Membuka dan membaca file " << endl;
 }
