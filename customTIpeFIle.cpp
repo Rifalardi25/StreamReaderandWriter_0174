@@ -51,5 +51,29 @@ void readandwritefile(string format){
     else cout << "Unable to open file";
 }
 
+int main()
+{
+    int choice;
+    cout << "1. File berfomat csv" << endl;
+    cout << "2. File berformat txt" << endl;
+    cout << "3. Keluar" << endl;
+    cout << "Pilih format file (1/2/3): ";
+    cin >> choice;
+    cin.ignore(); // Mengabaikan newline karakter setelah input pilihan
+    switch (choice) {
+        case 1:
+            readandwritefile("csv");
+            break;
+        case 2:
+            readandwritefile("txt");
+            break;
+        case 3:
+            cout << "Keluar dari program." << endl;
+            return 0;
+        default:
+            cout << "Pilihan tidak valid." << endl;
 
+    return 0;
+}
+}
 
